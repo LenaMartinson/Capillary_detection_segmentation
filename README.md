@@ -1,1 +1,1 @@
-# Capillry_detection_segmentation
+# Capillary_detection_segmentation
