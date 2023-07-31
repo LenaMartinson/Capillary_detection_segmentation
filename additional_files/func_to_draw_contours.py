@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+# funcs to visualize contours of SHARP and BLURRY classes
 
 def create_image_from_txt(txt_file_path, image_size):
     # Initialize an empty image with zeros
@@ -44,7 +45,6 @@ def save_contours(picture_name, label_name=None):
     # # Apply the colors for visualization
     predicted_truth_colored_sharp = ((ground_truth == 255) * ground_truth_color_sharp)
     predicted_truth_colored_blurry = ((ground_truth == 254) * ground_truth_color_blurry)
-    # # predicted_mask_colored = cv2.merge((predicted_mask == 255) * prediction_color)
     
     # # Blend the original image with the ground truth and prediction
     overlayed_image = cv2.addWeighted(predicted_truth_colored_sharp, 1, 

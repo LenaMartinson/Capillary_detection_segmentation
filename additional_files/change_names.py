@@ -1,3 +1,4 @@
+# file to change names in my folder
 with open("/home/martinson/data_2/train.txt") as f:
     all_lines = f.readlines()
     with open("/home/martinson/data_2/train2.txt", "w") as new_f:
